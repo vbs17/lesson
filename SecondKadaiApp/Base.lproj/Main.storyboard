@@ -17,20 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDV-Kz-bTv">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDV-Kz-bTv">
                                 <rect key="frame" x="207" y="51" width="187" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hBq-QT-oJ3">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hBq-QT-oJ3">
                                 <rect key="frame" x="252" y="120" width="97" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.27777903949999999" blue="0.42538812990000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="3OM-g9-xQL"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKG-Lb-M4d">
-                                <rect key="frame" x="231" y="196" width="139" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PKG-Lb-M4d">
+                                <rect key="frame" x="263" y="190" width="74" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -40,9 +43,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="PKG-Lb-M4d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2te-Ec-7LR"/>
-                            <constraint firstItem="gDV-Kz-bTv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iPf-LP-pjl"/>
-                            <constraint firstItem="hBq-QT-oJ3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oEp-Uh-8Hq"/>
+                            <constraint firstItem="gDV-Kz-bTv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3mi-vR-bze"/>
+                            <constraint firstItem="PKG-Lb-M4d" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-89" id="BWk-Jo-FEd"/>
+                            <constraint firstItem="PKG-Lb-M4d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CtA-FT-Jyc"/>
+                            <constraint firstItem="hBq-QT-oJ3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dva-1T-KgN"/>
+                            <constraint firstItem="hBq-QT-oJ3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-165" id="Tp4-c3-YPu"/>
+                            <constraint firstItem="gDV-Kz-bTv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-238.5" id="hPG-rz-GTO"/>
                         </constraints>
                     </view>
                     <connections>
@@ -65,14 +71,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRq-hc-0l1">
-                                <rect key="frame" x="236" y="65" width="128" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sRq-hc-0l1">
+                                <rect key="frame" x="279" y="65" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ser-ex-SOj">
-                                <rect key="frame" x="246" y="150" width="108" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ser-ex-SOj">
+                                <rect key="frame" x="259" y="142" width="83" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
@@ -84,6 +90,10 @@
                         <constraints>
                             <constraint firstItem="sRq-hc-0l1" firstAttribute="centerX" secondItem="Nar-8L-BhX" secondAttribute="centerX" id="7jP-f7-mGu"/>
                             <constraint firstItem="ser-ex-SOj" firstAttribute="centerX" secondItem="Nar-8L-BhX" secondAttribute="centerX" id="8K3-aR-MYZ"/>
+                            <constraint firstItem="ser-ex-SOj" firstAttribute="centerX" secondItem="Nar-8L-BhX" secondAttribute="centerX" id="Hhd-gP-Oti"/>
+                            <constraint firstItem="ser-ex-SOj" firstAttribute="centerY" secondItem="Nar-8L-BhX" secondAttribute="centerY" constant="-135" id="HqJ-MN-ROl"/>
+                            <constraint firstItem="sRq-hc-0l1" firstAttribute="centerX" secondItem="Nar-8L-BhX" secondAttribute="centerX" id="xiZ-NG-OBc"/>
+                            <constraint firstItem="sRq-hc-0l1" firstAttribute="centerY" secondItem="Nar-8L-BhX" secondAttribute="centerY" constant="-224.5" id="xmY-Q2-cDH"/>
                         </constraints>
                     </view>
                     <connections>
